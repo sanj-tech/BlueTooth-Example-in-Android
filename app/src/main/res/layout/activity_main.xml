@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFB00020"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="Bluetooth"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#247E33"
+            android:backgroundTint="#247E33"
+            android:onClick="on"
+            android:text="On"
+            app:backgroundTint="#247E33" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#E040FB"
+            android:backgroundTint="#E040FB"
+            android:onClick="visible"
+            android:text="Get visible"
+            app:backgroundTint="#E040FB" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EAEA22"
+            android:backgroundTint="#EAEA22"
+            android:onClick="list"
+            android:text="Devices"
+            app:backgroundTint="#EAEA22" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#BD4D2A"
+            android:backgroundTint="#BD4D2A"
+            android:onClick="off"
+            android:text="Off"
+            app:backgroundTint="#BD4D2A" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_margin="10dp"
+        android:text="Paired devices"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+
+        android:background="@color/design_default_color_error"
+        android:layout_alignParentBottom="true" />
+
+
+</LinearLayout>
